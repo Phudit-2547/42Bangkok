@@ -1,0 +1,39 @@
+.parallax {
+    background: url("https://webusstatic.yo-star.com/ark_us_web/assets/162581243523314800/4db0986b218108938f34b5ea46ee801e.jpg");   
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.midparallax{
+    background-color:black;
+    line-height: 1000px;
+    height: 1000px;
+}
+.midtext{
+    font-size:small;
+    color: white;
+    text-align: center;
+}
+.text{
+    color: black;
+    font-size: small;
+    text-align: center;
+    line-height: 750px;
+    height:750px;
+}
+.underparallax{
+    background: url("https://webusstatic.yo-star.com/ark_us_web/assets/160448431355914828/54b990fe05125457d94b319976f2c346.jpg");   
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}

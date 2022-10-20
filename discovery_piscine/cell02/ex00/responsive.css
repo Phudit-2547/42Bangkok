@@ -1,0 +1,28 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+table,
+tr,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width:100%
+}
+.a,
+.b {
+    text-align: left;
+    width: max-content;
+    height: 100vh;
+}
+
+.a {
+    background-color: lightgreen;
+}
+
+.b {
+    background-color: lightskyblue;
+}

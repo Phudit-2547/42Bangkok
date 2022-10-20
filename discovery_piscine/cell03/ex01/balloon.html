@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+    <style>
+        .ball{
+            background-color: red; 
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; 
+            margin-top: 17.5%;  
+            margin-left: 90vh;
+        }
+    </style>
+</head>
+<body>
+        <div class="ball" id="ball" onclick="bigger(),gocolor()" onmouseout="small(),backcolor()"></div>
+    <script>
+        let ball = document.getElementById("ball");
+        function bigger(event){
+            if(ball.style.height > "420px")
+            {
+                ball.style.height = "200px"
+                ball.style.width = "200px"
+            }
+            else
+            {
+                ball.style.height = (ball.offsetHeight+10) + "px" 
+                ball.style.width = (ball.offsetHeight +10) + "px" 
+            }        
+        }
+        function small(){
+
+            if (ball.style.height <= "200px") {
+                ball.style.height = "200px"
+                ball.style.width = "200px"
+            }
+            else {
+                ball.style.height = (ball.offsetHeight -5) + "px"
+                ball.style.width = (ball.offsetHeight -5) + "px"
+            }
+        }
+        function gocolor(event){
+            if(ball.style.backgroundColor == "red"){
+                ball.style.backgroundColor = "green";
+            }
+            else if (ball.style.backgroundColor == "green") {
+                ball.style.backgroundColor = "blue";
+            }
+            else{
+                ball.style.backgroundColor = "red";
+            }          
+        }
+        function backcolor(event){
+            if (ball.style.backgroundColor == "blue") {
+                ball.style.backgroundColor = "green"
+            }
+            else if (ball.style.backgroundColor == "green") {
+                ball.style.backgroundColor = "red"
+            }
+            else {
+                ball.style.backgroundColor = "blue"
+            }          
+        }
+    </script>
+</body>
+</html>

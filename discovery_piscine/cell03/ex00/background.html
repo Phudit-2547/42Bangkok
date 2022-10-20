@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+    <button onclick="changeBG()" ><div>Change backgroundcolor</div></button>
+    <script>
+        const changeBG=()=> {
+                document.body.style.backgroundColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+
+            }
+    </script>
+</body>
+</html>
